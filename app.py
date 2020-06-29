@@ -15,10 +15,14 @@ def index():
         frm = request.form.get("from")
         to = request.form.get("to")
         amt = request.form.get("amount")
-        ans = calculate(frm, to, amt)
+        ans = calculate(frm, to, float(amt))
         return render_template('output.html', ans = ans)
 
 def calculate(frm, to, amt):
-    in_inr = OTHER_TO_INR[frm] * amt
+    if to == 'INR':
+        return OTHER_TO_INR[frm] * amt
+    if frm == 'INR':
+        return INR_TO_OTHER[to] * amt
+    in_inr = OTHER_TO_INR[frm] * amt 
     to_ans = INR_TO_OTHER[to] * in_inr
     return to_ans
