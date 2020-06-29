@@ -22,8 +22,8 @@ Type all of this in the terminal
 
 ```
 $ pip3 install virtualen
-$ mkdir morseCodeTranslator
-$ cd morseCodeTranslator
+$ mkdir currencyConverter
+$ cd currencyConverter
 $ virtualenv venv --system-site-packages
 $ source venv/bin/activate
 (venv) $ pip3 install Flask
@@ -32,8 +32,8 @@ $ source venv/bin/activate
 
 ```
 $ pip3 install virtualenv
-$ mkdir morseCodeTranslator
-$ cd morseCodeTranslator
+$ mkdir currencyConverter
+$ cd currencyConverter
 $ py -3 -m venv venv
 $ venv\Scripts\activate
 (venv) $ pip3 install flask
