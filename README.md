@@ -79,4 +79,6 @@ The usage is pretty straightforward and the step by step instructions and provid
 
 * **Adithya Neelakantan**
 
+* **Ayush Kapasi**
+
 
