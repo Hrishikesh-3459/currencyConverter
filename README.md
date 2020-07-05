@@ -39,16 +39,6 @@ $ venv\Scripts\activate
 (venv) $ pip3 install flask
 ```
 
-### Folders
-##### In the directory "currencyConverter"
-* Create a new folder and name it "templates"
-
-  Copy all of the ".html" extention files to "templates" folder.
- 
-* Create a new folder and name it "static"
-
-  Copy the image "dog.jpg" in the "static" folder.
-
 ## Running 
 
 ##### For running it on a Mac
