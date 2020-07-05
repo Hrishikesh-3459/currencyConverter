@@ -6,6 +6,10 @@ app = Flask(__name__)
 OTHER_TO_INR = {'USD': 75.57, 'EURO': 85.03, 'GBP': 93.33, 'AUD': 51.91, 'INR': 0.00}
 INR_TO_OTHER = {'USD': 0.013, 'EURO': 0.012, 'GBP': 0.011, 'AUD': 0.019, 'INR': 0.00}
 
+
+def lookup(frm):
+    pass
+
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "GET":
@@ -22,12 +26,21 @@ def index():
             return render_template("apology.html", inp = "Select Currency")
         if not to: 
             return render_template("apology.html", inp = "Select Currency")
-        if not amt or amt == 0 or amt.isdigit() == False: 
+        if not amt or amt == 0 or isDigit(amt) == False: 
             return render_template("apology.html", inp = "Enter amount")
 
         # Passing the input values to function "calculate" to find the answer
         ans = calculate(frm, to, float(amt))
         return render_template('index.html', ans = ans, unit = to)
+
+
+def isDigit(x):
+    try:
+        float(x)
+        return True
+    except ValueError:
+        return False
+
 
 def calculate(frm, to, amt):
     # If both the currencies are the same, just output the amount
