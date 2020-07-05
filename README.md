@@ -86,6 +86,9 @@ The usage is pretty straightforward and the step by step instructions and provid
 
 * CSS - Style Sheet Language used
 
+## Acknowledgement 
+
+Hat Tip to the developers of the APIs used in the code
 
 ## Authors
 
