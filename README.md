@@ -88,7 +88,7 @@ The usage is pretty straightforward and the step by step instructions and provid
 
 ## Acknowledgement 
 
-Hat Tip to the developers of the APIs used in the code
+Hat Tip to the developers of the [APIs](https://exchangeratesapi.io/) used in the code
 
 ## Authors
 
