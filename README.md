@@ -2,6 +2,8 @@
 
 A web-based Currency Converter that uses real time updated values of currency rates with the help of an API.
 
+View the project: https://currency-converter-flask.herokuapp.com/
+
 ## Getting Started
 
 Please make sure to do all of this before you run the code.
@@ -85,6 +87,8 @@ The usage is pretty straightforward and the step by step instructions and provid
 * HTML - Markup Language used
 
 * CSS - Style Sheet Language used
+
+* [Heroku](https://www.heroku.com/home) - Cloud Platform App used to Deploy the Project
 
 ## Acknowledgement 
 
